@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#11110f">
+  <meta name="description" content="Personal portfolio of an aspiring IoT developer.">
+  <title>NOIR — IoT Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="NOIR home">
+      <span class="brand-mark">N.</span>
+      <span>NOIR<span class="brand-dot">.</span></span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Buka navigasi" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+
+    <nav class="navigation" id="navigation">
+      <a class="nav-link active" href="#home">Overview</a>
+      <a class="nav-link" href="#about">About</a>
+      <a class="nav-link" href="#projects">Projects</a>
+      <a class="nav-link" href="#contact">Contact</a>
+    </nav>
+
+    <a class="topbar-cta" href="#contact">Let’s talk <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero section-shell" id="home">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="status-dot"></span> PERSONAL PORTFOLIO <span class="eyebrow-line"></span> 2026</div>
+        <p class="hero-kicker">Hello, I’m an aspiring IoT developer.</p>
+        <h1>Turning ideas<br>into <em>intelligent</em><br>systems<span class="gold-period">.</span></h1>
+        <p class="hero-description">I explore the connection between hardware and software, building practical digital experiences through code, electronics, and the Internet of Things.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore projects <span>↗</span></a>
+          <a class="text-link" href="#about">A little about me <span>↓</span></a>
+        </div>
+        <div class="hero-meta">
+          <div><span class="meta-label">FOCUS</span><strong>IoT · Web Development</strong></div>
+          <div><span class="meta-label">BASED IN</span><strong>Indonesia</strong></div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal delay-one">
+        <div class="visual-topline"><span>SELECTED WORK / 001</span><span>01 — 03</span></div>
+        <div class="device-scene">
+          <div class="scene-grid"></div>
+          <div class="orbit orbit-a"></div>
+          <div class="orbit orbit-b"></div>
+          <div class="device-card">
+            <div class="device-card-top"><span class="tiny-led"></span><span>CONNECTED DISPLAY</span><span class="device-menu">•••</span></div>
+            <div class="display-window">
+              <span class="display-label">LUNOVA / SMART CLOCK</span>
+              <strong id="digitalClock">09:41</strong>
+              <span class="display-date" id="digitalDate">MONDAY, 23 NOVEMBER</span>
+              <div class="display-message">SELAMAT DATANG DI PPLG</div>
+            </div>
+            <div class="device-card-bottom"><span>ESP8266</span><span>MQTT READY</span><span class="signal-bars">▂ ▅ ▇</span></div>
+          </div>
+          <div class="floating-note note-one"><span class="note-icon">⌁</span><span><b>Hardware</b><small>Connected systems</small></span></div>
+          <div class="floating-note note-two"><span class="note-icon">⌘</span><span><b>Software</b><small>Web control interface</small></span></div>
+          <div class="visual-caption">A small glimpse into what I build.</div>
+        </div>
+        <div class="visual-bottomline"><span>HARDWARE MEETS SOFTWARE</span><span>SCROLL TO EXPLORE ↓</span></div>
+      </div>
+    </section>
+
+    <section class="intro-strip section-shell reveal">
+      <span class="strip-index">01 / INTRODUCTION</span>
+      <p>Curious about how things work. Interested in making technology <em>useful, connected, and accessible.</em></p>
+      <span class="strip-mark">✳</span>
+    </section>
+
+    <section class="about section-shell section-spacing" id="about">
+      <div class="section-heading reveal">
+        <span class="eyebrow">A LITTLE ABOUT ME</span>
+        <h2>Learning by building.<br><em>Growing through curiosity.</em></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-note reveal">
+          <div class="portrait-placeholder"><span class="portrait-monogram">N.</span><span class="portrait-caption">YOUR PHOTO<br>GOES HERE</span></div>
+          <div class="availability"><span class="status-dot"></span> Open to learning & collaboration</div>
+        </div>
+        <div class="about-content reveal delay-one">
+          <p class="lead">I’m a student developer interested in creating technology that connects the physical and digital worlds.</p>
+          <p>My current learning journey focuses on microcontrollers, IoT communication, and web interfaces. I enjoy understanding how each part works, from a device receiving data to a dashboard presenting it clearly.</p>
+          <p>This portfolio is a record of experiments, projects, and ideas that I continue to develop.</p>
+          <div class="skill-list">
+            <span>Microcontrollers</span><span>IoT Systems</span><span>Web Interface</span><span>Problem Solving</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects section-shell section-spacing" id="projects">
+      <div class="section-heading projects-heading reveal">
+        <div><span class="eyebrow">SELECTED WORK</span><h2>Projects in <em>progress.</em></h2></div>
+        <p>A few explorations where hardware, software, and design meet.</p>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card project-featured reveal">
+          <div class="project-art art-clock">
+            <div class="art-glow"></div>
+            <div class="mini-panel">
+              <div class="mini-panel-top"><span></span><span>LUNOVA DISPLAY</span></div>
+              <strong>12:08</strong>
+              <small>SELAMAT DATANG</small>
+              <div class="mini-panel-foot">P10 LED · ESP8266</div>
+            </div>
+            <span class="art-number">01</span>
+          </div>
+          <div class="project-info">
+            <div><span class="project-type">INTERNET OF THINGS</span><h3>LUNOVA Smart Clock IoT</h3></div>
+            <p>A digital clock and running-text display concept with web-based controls and connected device communication.</p>
+            <div class="tag-row"><span>ESP8266</span><span>MQTT</span><span>DS3231</span><span>P10 LED</span></div>
+            <button class="project-open" data-project="lunova">View project <span>↗</span></button>
+          </div>
+        </article>
+
+        <article class="project-card reveal delay-one">
+          <div class="project-art art-dashboard">
+            <div class="dashboard-mock">
+              <div class="mock-sidebar"><i></i><i></i><i></i></div>
+              <div class="mock-main"><span></span><span></span><div class="mock-chart"><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="mock-cards"><i></i><i></i></div></div>
+            </div>
+            <span class="art-number">02</span>
+          </div>
+          <div class="project-info">
+            <div><span class="project-type">WEB DEVELOPMENT</span><h3>IoT Control Dashboard</h3></div>
+            <p>A control interface concept for managing display settings and monitoring device connection status.</p>
+            <div class="tag-row"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <button class="project-open" data-project="dashboard">View project <span>↗</span></button>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-art art-circuit">
+            <div class="circuit-board"><span class="chip">ESP<br>8266</span><i class="trace trace-one"></i><i class="trace trace-two"></i><i class="trace trace-three"></i><span class="pin pin-a"></span><span class="pin pin-b"></span><span class="pin pin-c"></span></div>
+            <span class="art-number">03</span>
+          </div>
+          <div class="project-info">
+            <div><span class="project-type">ELECTRONICS</span><h3>Microcontroller Experiments</h3></div>
+            <p>Small experiments exploring sensors, microcontroller inputs and outputs, and device integration.</p>
+            <div class="tag-row"><span>Arduino</span><span>C++</span><span>Electronics</span></div>
+            <button class="project-open" data-project="experiments">View project <span>↗</span></button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="toolkit section-shell section-spacing reveal">
+      <div class="toolkit-copy"><span class="eyebrow">TOOLS & TECHNOLOGIES</span><h2>My current <em>toolkit.</em></h2><p>Technologies I’m learning and using to turn ideas into working projects.</p></div>
+      <div class="toolkit-list">
+        <div><span class="tool-symbol">C+</span><span><b>C / C++</b><small>Microcontroller programming</small></span><span class="tool-arrow">↗</span></div>
+        <div><span class="tool-symbol">⌘</span><span><b>ESP8266 & Arduino</b><small>Hardware and embedded systems</small></span><span class="tool-arrow">↗</span></div>
+        <div><span class="tool-symbol">⌗</span><span><b>HTML, CSS & JavaScript</b><small>Web development</small></span><span class="tool-arrow">↗</span></div>
+        <div><span class="tool-symbol">↔</span><span><b>MQTT & MySQL</b><small>Communication and data</small></span><span class="tool-arrow">↗</span></div>
+      </div>
+    </section>
+
+    <section class="contact section-shell section-spacing" id="contact">
+      <div class="contact-panel reveal">
+        <span class="eyebrow">HAVE AN IDEA?</span>
+        <h2>Let’s make<br>something <em>work.</em></h2>
+        <p>Interested in technology, IoT projects, or exchanging ideas? I’d be glad to connect.</p>
+        <a class="button button-primary" href="mailto:hello@example.com">Get in touch <span>↗</span></a>
+        <div class="contact-decoration">N.</div>
+      </div>
+      <footer class="footer"><a class="brand" href="#home"><span class="brand-mark">N.</span><span>NOIR<span class="brand-dot">.</span></span></a><span>Designed & built with curiosity.</span><span>© <span id="year"></span> — PORTFOLIO</span></footer>
+    </section>
+  </main>
+
+  <div class="modal" id="projectModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Tutup">×</button>
+      <span class="eyebrow" id="modalEyebrow">PROJECT DETAILS</span>
+      <h2 id="modalTitle">Project title</h2>
+      <p id="modalDescription"></p>
+      <div class="modal-tags" id="modalTags"></div>
+      <p class="modal-note">Project details and documentation can be expanded here as the project develops.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
